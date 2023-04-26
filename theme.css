@@ -1,0 +1,20 @@
+body{
+    background-image: url('new_back.jpg');
+    background-size: cover;
+    background-position: center;
+}
+header{
+    font-family: cursive;
+}
+
+button{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    font-family: cursive;
+}
+
+main{
+    background-color: skyblue;
+    font-family: cursive;
+}

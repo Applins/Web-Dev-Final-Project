@@ -1,0 +1,223 @@
+/*Added media queries */
+
+body{
+    background-image: url('back.jpg');
+    background-size:cover;
+    background-position: center 0.025px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section:not(#homePage){
+    display: none;
+}
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 6fr 1fr;
+    grid-template-columns: 960px;
+    gap: 5px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 30px;
+   
+}
+
+header{
+    font-size: 56px;
+    text-align: center;
+}
+
+#cap{
+    position:absolute;
+    top:10px;    
+    right:20px;
+}
+nav{
+    border: 1px solid black;
+    border-radius: 16px;
+    text-align: center;
+}
+button{
+    background-color: lightgray;
+    border: none;
+    color: black;
+    padding: 15px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 15px 2px;
+    cursor: pointer;
+    border-radius: 16px;   
+}
+button:hover{
+    background-color: beige;
+}
+main{
+    background-color: peachpuff;
+    text-align: center;
+}
+#homePage img{
+    width: 100%;
+}
+.CS2550{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap:5px;
+    border: 1px solid black;
+}
+.left{
+    margin: 20px;
+}
+.right{
+    margin: 5px;
+    width: 100%;
+}
+textarea{
+    columns: 40;
+}
+.contacting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+footer{
+    background-color: darkgrey;
+    text-align: center;
+}
+.entrie-container{
+    list-style-type: none;
+    padding: 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.entrie-container li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content:center;
+}
+.entrie-container li li input,
+.entrie-container li textarea {
+  padding: 15px;
+  font: normal 16px/1.5 sans-serif;
+}
+.entrie-container > li {
+    margin-bottom: 20px;
+  }
+  
+  .entrie-container > li > label {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 140px;
+            flex: 1 0 140px;
+    max-width: 200px;
+  }
+  
+  .entrie-container > li + * {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 200px;
+            flex: 1 0 200px;
+  }
+  
+  .entrie-container > input[type='checkbox'] ~ div.errorMsg {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 350px;
+            flex: 1 0 350px;
+    text-align: right;
+  }
+
+.rows{
+    position: relative;
+}
+.errorMsg{
+    position:absolute;
+    top: 100%;
+    left: 266px;
+    
+}
+  /*only show error information when 'was-validated' class is added to the input*/
+input.was-validated:invalid {
+    color: red;
+    border: 1px solid red;
+    
+  }
+  
+  input.was-validated:invalid ~ div {
+    display: block;
+    color: red;
+    margin-top: 5px;
+  }
+  /* hide all error divs 
+  ~ is the general sibling selector and selects 'div' siblings of the input*/
+  input:valid ~ div {
+    display: none;
+  }
+  li input.was-validated:valid{
+    color: green;
+    border: 3px solid green;
+  }
+  
+  input:invalid ~ div {
+    display: none;
+  }
+
+@media (max-width: 840px) {
+    .grid {
+        grid-template-rows: 1fr;
+        grid-template-columns: 100%;
+        padding: 10px;
+    }
+    
+    header {
+        font-size: 36px;
+    }
+    
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: none;
+    }
+    
+    button {
+        margin: 5px;
+    }
+    
+    .CS2550 {
+        display: block;
+    }
+    
+    .left, .right {
+        margin: 10px;
+    }
+    
+    .contacting {
+        flex-direction: column;
+        padding-top: 10px;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 480px) {
+    /* Styles for screens smaller than 480px */
+    .element {
+      font-size: 16px;
+    }
+    img{
+        width: auto;
+    }
+    .left{
+        width: 300;
+    }
+    textarea{
+        column-count: 5;
+    }
+    iframe{
+        width: 100%;
+    }
+  }
+  

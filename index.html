@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<body >
+    <div class = "grid">
+        <header id="cap"><img src="cap.png" width="50" height="50"></header>
+        <header>Welcome</header>
+        <nav>
+            <button name="home">Home</button>
+            <button name="class">CS 2550</button>
+            <button name ="contact">Contact Us</button>
+            <button name="Visitor">Visitor Form</button>
+            <button name="Apply">Apply Theme</button>
+            
+        </nav>
+        <main>
+            <section id="homePage">
+                <p>
+                    Welcome to your intro to Web Development! Here is the start to learning 
+                    how to make your own websites! 
+                </p>
+                <p>
+                    The CS 2550 is where we will begin your learning adventure! 
+                </p>
+                <img src="The 3.png" width="400" height="300">  
+            </section>
+
+            <section class="CS2550">
+                <div class="left">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/zJSY8tbf_ys" title="Crash Course" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class = "right">
+                    <p>Notes</p>
+                    <textarea id = "notes" cols="40" rows="10"></textarea>
+                </div>
+            </section>
+
+            <section class = "contacting">
+                <h2>We are happy to hear from YOU</h2>
+                <p>Call us @: 1-123-456-7890</p>
+                <p>Email us @: webdev@webdev.com</p>
+                <p>Write us a letter: </p>
+                <address>
+                    The Web Dev Learning Company<br>
+                    1234 Web Street<br>
+                    World Wide Web
+                </address>
+            </section>
+
+            <section class="personal">
+                <h2>Visitor Form</h2>
+                <form  id="myform" novalidate method="GET" action="https://wp.zybooks.com/form-viewer.php">
+                    <ul class="entrie-container">
+                        <li class="rows">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name" required>
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li class="rows">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name"  required>
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li class="rows">
+                            <label for="address">Address</label>
+                            <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li class="rows">
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" placeholder="Enter your city" required>
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li class="rows">
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" placeholder="Enter your state" required>
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li class="rows">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" id="zip" name="zip" placeholder="Enter your zip code" required>
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li class="rows">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li class="rows">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" name="email" placeholder="Enter your email"  required>
+                            <div class="errorMsg"></div>
+                        </li>
+                        <li>
+                            <h2>How did you find my page</h2>
+                          </li>
+                          <li>
+                            <input type="checkbox" id='google' name='find-page' value="google">
+                            <label for="google">Google Search</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id='friend' name='find-page' value="friend">
+                            <label for="friend">Friend</label>
+                          </li>
+                          <li>
+                            <input type="checkbox" id='newspaper' name='find-page' value="newspaper">
+                            
+                            <label for="newspaper">News Paper</label>
+                            <div class="errorMsg"></div>
+                          </li>
+                          
+                          <li>
+                            <button id="submitBtn" type="submit">Send</button>
+                          </li>
+                        
+                    </ul>
+                </form>
+            </section>
+            
+
+        </main>
+        <footer>
+            
+        </footer>
+    </div>
+    <script src="validation.js"></script>
+    <script src="script.js"></script> 
+   
+</body>
+
+</html>
